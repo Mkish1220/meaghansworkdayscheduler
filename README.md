@@ -1,2 +1,1 @@
-# meaghansworkdayscheduler
-challenge5 work day scheduler 
+My Work Day Scheduler! Welcome to the Full-Stack Boot Camp! Here you will find My Work Day Scheduler, inside this repo I have included a readme file, index.html, style.css, script.js, gitignore. In this project you will be prompted with my work day scheduler. For a closer preview of what to explore in each unit of the repo, dive into each file to learn more. Visit the working webpage @
