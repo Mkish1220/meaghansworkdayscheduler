@@ -10,9 +10,31 @@ document.getElementById("saveBtn").addEventListener("click", displayText);
 function displayText() {
     var input = document.getElementById("input").value;
     localStorage.setItem("input", input);
+    displayInput();
 }
 //function to display input>
-function displayInput() {
+//function to change color past and present 
+function changeColor() {
+    var currentTime = moment().format('H');
+   if (currentTime < 12) {
+       $("#currentDay").css("background-color", "green");
+   }
+    else if (currentTime >= 12 && currentTime < 17) {
+        $("#currentDay").css("background-color", "yellow");
+    }
+    else {
+        $("#currentDay").css("background-color", "red");
+    }
+
+}
+
+
+//function to change color past and present
+changeColor();
+//function to display saved input>
+function displaySavedInput() {
     var input = localStorage.getItem("input");
     document.getElementById("input").value = input;
 }
+//function to display saved input>
+displaySavedInput();
